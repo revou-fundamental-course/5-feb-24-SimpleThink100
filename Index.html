@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>* {
+        box-sizing: border-box;
+      }
+
+label {width: 100%;}
+input {width: 100%;}
+button {padding: 4px;}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;}
+ /* For mobile phones: */
+[class*="col-"] {
+  float:inline-start;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+.converter{
+    align-content: center;
+}
+#converter {
+  display: flex;justify-content: center ;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1> Konversi Suhu</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-s-5">
+         
+            <label >C</label><BR>
+            <input type="number" inputmode="numeric"></input>
+           
+        </div>
+   
+        <div class="col-s-2" id="converter">
+            <button>
+            <img src="https://static-00.iconduck.com/assets.00/reverse-alt-icon-256x256-w3uz0qo1.png" width="20" height="20">
+            </button>
+        </div>
+   
+        <div class="col-s-5" converter>
+            
+            <label >F</label><BR>
+            <input type="number" inputmode="numeric" disabled="text"> </input>  
+            
+        </div>      
+
+        <div class="col-s-12">
+            <form action="/form/submit" method="GET">
+                <textarea class="col-s-12" rows="5" name="text" placeholder="Enter text" disabled="text"></textarea>
+              </form>
+            
+        </div>
+
+        <div class="col-s-12">
+            <h2>
+                Cara konversi Celcius ke Fahrenheit
+            </h2>
+            <p>
+                Suhu S dalam derajat Fahrenheit (F) sama dengan suhu S dalam derajat Celsius (C) x 9/5 tambah 32.
+            </p>
+
+        </div>
+
+    </div>
+    <footer >    
+    <a href="https://id.wikipedia.org/wiki/Konversi_skala_suhu" target="_blank">Konversi Suhu</a>
+    <a href="https://id.wikipedia.org/wiki/Derajat_(suhu)" target="_blank">Derajat</a>
+    <a href="https://id.wikipedia.org/wiki/Celsius" target="_blank">Celcius</a>
+    <a href="https://id.wikipedia.org/wiki/Fahrenheit" target="_blank">Fahrenheit</a>
+
+    </footer>
+</body>
+</html>
